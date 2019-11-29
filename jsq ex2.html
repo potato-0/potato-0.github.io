@@ -13,20 +13,18 @@
       margin-top: 30px;
       margin-right: 20px;
     }
-    .big{
+
+    .big {
       display: none;
       width: 350px;
       height: 350px;
     }
-    input{
+
+    input {
       width: 150px;
       height: 30px;
       border: 1px solid #ccc;
       margin: 10px 15px;
-    }
-    img{
-      width: 150px;
-      height: 150px;
     }
   </style>
   <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
@@ -41,17 +39,12 @@
       $('#stoggle').click(function() {
         $('.slide').slideToggle(3000);
       });
-      $('#btn1').click(function() {
-        $('#big1').slideToggle(3000);
-      });
-      $('#btn2').click(function() {
-        $('#big2').slideToggle(3000);
-      });
     });
   </script>
 </head>
 
 <body>
+  <a href="index.html"><h3>HOME</h3></a><br>
   <form>
     <input type="button" id="sup" value="slideUp">
     <input type="button" id="sdown" value="slideDown">
@@ -65,21 +58,6 @@
       겨울입니다. 눈이옵니다 년말년시 잘 보내시길...
     </p>
   </div>
-
-  <table border="1" cellspacing=0>
-    <tr>
-      <td><img src="peng.jpg"></td>
-      <td><img src="pp.jpg"></td>
-    </tr>
-    <tr>
-      <td><input type="button" id="btn1" value="큰 이미지로 보기/닫기"></td>
-      <td><input type="button" id="btn2" value="큰 이미지로 보기/닫기"></td>
-    </tr>
-    <tr>
-      <td><img src="bono.jpg" id="big1" class="big"></td>
-      <td><img src="ap.png" id="big2" class="big"></td>
-    </tr>
-  </table>
 </body>
 
 </html>
