@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title></title>
+    <style>
+      section article ul{
+        font-size: 15px;
+        border: 1px solid blue;
+      }
+      section{
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('#b').click(function(){
+          $('#div').html('오늘은 제육 먹자');
+        });
+        $('#c').click(function(){
+          $('#div').html('오늘은 국밥 먹자');
+        });
+        $('#d').click(function(){
+          $('#div').html('오늘은 치킨 먹자');
+        });
+        $('#e').click(function(){
+          $('#div').html('오늘은 피자 먹자');
+        });
+        $('#f').click(function(){
+          $('#div').html('오늘은 삼겹살 먹자');
+        });
+        $('#div').click(function(){
+          $('#div').html('');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>오늘은 뭘 먹을까?</h1>
+
+    <section>
+      <article id="art">
+        <ul>
+          <li id="b">제육</li>
+          <li id="c">국밥</li>
+          <li id="d">치킨</li>
+          <li id="e">피자</li>
+          <li id="f">삼겹살</li>
+        </ul>
+        <div id="div"></div>
+      </article>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+      img {
+        display: none;
+        width: 12px;
+        height: 10px;
+      }
+      #btn2{
+        display: none;
+      }
+      #btn3{
+        display: none;
+      }
+      #p{
+        display: none;
+        font-size:1px;
+      }
+      #btn4{
+        display: none;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('#btn').click(function(){
+          $('#btn2').show();
+          $('#img').show();
+          $('#p').show();
+          $('#btn').hide();
+        });
+        $('#btn2').click(function() {
+          $('#btn3').show();
+          $('#btn2').hide();
+          $('#img').animate({width:'+=108'},100);
+          $('#img').animate({height:'+=90'},100);
+          $('#p').animate({fontSize:'+=9'},100);
+        });
+        $('#btn3').click(function() {
+          $('#btn4').show();
+          $('#btn3').hide();
+          $('#img').animate({width:'+=480'},100);
+          $('#img').animate({height:'+=410'},100);
+          $('#p').animate({fontSize:'+=40'},100);
+        });
+        $('#btn4').click(function(){
+          $('#btn').show();
+          $('#btn4').slideUp(1000);
+          $('#img').slideUp(1000);
+          $('#p').slideUp(1000);
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <h1>여기 아싸 있다던데?</h1>
+
+        <input type="button" id="btn" value="누군데?">
+        <input type="button" id="btn2" value="누구라고?">
+        <input type="button" id="btn3" value="나라고?">
+        <input type="button" id="btn4" value="닫기">
+
+        <img src="you.jpg" id="img">
+        <p id="p">응 바로 너야</p>
+
+
+  </body>
+</html>

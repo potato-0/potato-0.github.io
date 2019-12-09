@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+      section article ul{
+        font-size: 15px;
+        border: 1px solid blue;
+      }
+      section{
+        width: 600px;
+        height: 600px;
+      }
+      img {
+        display: none;
+      }
+      h3{
+        display: none;
+      }
+      #btn2{
+        display: none;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('#btn').click(function(){
+          $('#btn').slideUp(500);
+          $('#img').slideDown(1000);
+          $('h3').slideDown(1000);
+          $('#btn2').slideDown(500);
+        });
+        $('#btn2').click(function(){
+          $('#btn').slideDown(500);
+          $('#img').slideUp(1000);
+          $('h3').slideUp(1000);
+          $('#btn2').slideUp(500);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>요즘 인싸 누구야?</h1>
+    <section>
+      <article id="art">
+        <input type="button" id="btn" value="누구야?">
+        <input type="button" id="btn2" value="닫기">
+        <img src="html/peng.jpg" id="img">
+        <h3>김명중이래</h3>
+      </article>
+    </section>
+  </body>
+</html>
